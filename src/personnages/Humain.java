@@ -52,16 +52,17 @@ public class Humain {
 	public void acheter(String bien, int prix) {
 		if (prix>this.qttArgent) {
 			parler("Je n'ai plus que " + this.qttArgent
-					+ " sous en poche. Je ne peux même pas "
-					+ "m'offrir un kimono à " + prix
+					+ " sous en poche. Je ne peux mï¿½me pas "
+					+ "m'offrir un kimono ï¿½ " + prix
 					+ "sous.");
 		}
 		else {
 			parler("J'ai " + qttArgent + " sous en poche. "
 					+ "Je vais pouvoir m'offrir " + bien
-					+ " à " + prix + "sous");
+					+ " ï¿½ " + prix + "sous");
 			perdreArgent(prix);
 		}
 	}
+	
 	
 }
